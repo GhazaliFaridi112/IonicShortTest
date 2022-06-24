@@ -1,0 +1,57 @@
+    .backIcon{
+        color: #2B68A0;
+        font-size: 2.2rem;
+        position: relative;
+        left: -10px;
+
+    }
+    .inputField{
+        background-color: #F7F7F7;
+        width: 100%;
+    }
+
+    ion-item{
+        --background: #F7F7F7;
+        width: 100%;
+        position: relative;
+        top: -3px;
+        height: 44px;
+    }
+
+    .searchIcon{
+        font-size: 1rem;
+    }
+
+    .segButton{
+        border: solid 1px;
+        border-radius: 5px;
+        height: 37px !important;
+        min-height: 10px;
+        margin-left: 8px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    ion-content::webkit-scrollbar {
+    display:none !important;
+    }
+
+    *::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .borderBottom{
+        border-bottom: solid 1px #d0d0d0
+
+    }
+
+    .row{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .segment{
+        margin-top: 5px;
+    }

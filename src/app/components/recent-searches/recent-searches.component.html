@@ -1,0 +1,26 @@
+  <ion-card>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="8">
+          <h3 class="recentSearch">Recent Searches</h3>
+        </ion-col>
+
+        <ion-col size="4">
+        <ion-label class="labelClear">Clear</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row *ngFor="let dt of recentSearch">
+        <ion-col size="1">
+          <ion-icon *ngIf="!dt.image" class="searchIcon" name="search-outline"></ion-icon>
+          <img *ngIf="dt.image" [src]="dt.image" class="profileImage">
+        </ion-col>
+        <ion-col size="11">
+          <p class="insideText">{{dt.text}}</p>
+        </ion-col>
+      </ion-row>
+
+
+
+    </ion-card-content>
+  </ion-card>

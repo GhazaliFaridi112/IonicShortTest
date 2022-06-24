@@ -1,0 +1,25 @@
+  <ion-card>
+    <ion-card-content>
+    
+          <ion-row class="borderBottom row"> 
+            <ion-col size="1">
+              <ion-icon class="backIcon" name="chevron-back-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="11">
+              <ion-item nolines lines="none">
+                <ion-icon  class="searchIcon" name="search-outline"></ion-icon>
+                <ion-input class="inputField" placeholder="search"></ion-input>
+            </ion-item>
+          
+            </ion-col>
+          </ion-row>
+          <ion-segment class="segment" scrollable value="heart">
+            <ion-segment-button *ngFor="let dt of headers" class="segButton" value="home">
+            <p> {{dt.name}}</p>
+            </ion-segment-button>
+        
+          </ion-segment>
+          
+    
+    </ion-card-content>
+  </ion-card>

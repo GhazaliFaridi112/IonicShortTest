@@ -1,0 +1,25 @@
+  <ion-card>
+    <ion-card-content>
+
+      <h3 class="peopleYou">People You May Know</h3>
+
+      <ion-row *ngFor="let dt of peopleYouMayKnow;let i=index" class="row">
+        <ion-col size="2" [ngClass]="{'borderBottom' : i==1}">
+        <img *ngIf="dt.image" [src]="dt.image" class="profileImage">
+        </ion-col>
+        <ion-col class="borderBottom" size="8">
+          <h3 class="insideText">{{dt.name}} <img *ngIf="dt.verified" class="verified" src="../../../assets/verified.png"> </h3>
+          <p class="place"> {{dt.place}} </p>
+          <p *ngIf="dt.mutual" class="mutual"> {{dt.mutual}} Mututal friends </p>
+        </ion-col>
+
+        <ion-col class="borderBottom" size="2">
+          <ion-icon  class="addIcon" name="person-add-outline"></ion-icon>
+        </ion-col>
+      </ion-row>
+
+
+      <h4 class="seeMore"> See More </h4>
+
+    </ion-card-content>
+  </ion-card>

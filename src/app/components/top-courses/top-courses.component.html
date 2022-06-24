@@ -1,0 +1,23 @@
+  <ion-card>
+    <ion-card-content>
+
+      <h3 class="topTen">Top Ten Courses</h3>
+
+      <ion-row *ngFor="let dt of topCourses;let i=index" class="row">
+      
+        <ion-col size="2" [ngClass]="{'borderBottom' : i==2}">
+        <img *ngIf="dt.image" [src]="dt.image" class="profileImage">
+        </ion-col>
+
+        <ion-col class="borderBottom" size="10">
+          <h3 class="insideText">{{dt.name}}  </h3>
+          <p class="place"> {{dt.place}} </p>
+          
+        </ion-col>
+      </ion-row>
+
+
+      <h4 class="seeMore"> See More </h4>
+
+    </ion-card-content>
+  </ion-card>

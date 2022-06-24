@@ -1,0 +1,72 @@
+    .labelClear{
+        color: #739cc1;
+        float: right !important;
+    }
+
+    .articles{
+        color: black;
+        font-weight: bold;
+    }
+
+    .boxShadow{
+        box-shadow:none ;
+    }
+
+    .myHeading{
+        color: black;
+        font-weight: bolder;
+    }
+    .content{
+        color: grey;
+    }
+
+    .icon{
+        width:20px
+    }
+
+    .bgImage{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .noPadding{
+        padding: 0px;
+    }
+
+    .paddingContent{
+        padding: 5px
+    }
+
+    .date{
+        float: right;
+        font-weight: 600;
+    }
+
+    .scroll{
+        overflow-x: scroll
+    }
+
+
+    .scrolling-wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    
+        .card {
+        display: inline-block;
+        width: 191px;
+        }
+    }
+
+
+    ::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    ion-content::webkit-scrollbar {
+    display:none !important;
+    }
+
+    *::-webkit-scrollbar {
+        display: none !important;
+    }
