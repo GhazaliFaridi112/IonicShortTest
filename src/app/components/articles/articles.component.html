@@ -14,18 +14,18 @@
     <div class="scrolling-wrapper">
     <ion-card class="boxShadow card" *ngFor="let dt of articles">
       <ion-card-header class="noPadding">
-        <img class="bgImage" src="../../../assets/bg1.jpeg">
+        <img class="bgImage" [src]="dt.image">
       </ion-card-header>
       <ion-card-content class="paddingContent">
-        <h4 class="myHeading"> Heading Goes here Heading Goes here</h4>
-        <p class="content"> written by abc</p>
+        <h4 class="myHeading"> {{dt.name}}</h4>
+        <p class="content"> {{dt.short}}</p>
         <ion-row>
           <ion-col size="6">
-            <img class="icon" src="../../../assets/star.png">
+            <img class="icon" [src]="dt.icons">
           </ion-col>
     
           <ion-col size="6">
-          <small class="date">14 oct,2020</small>
+          <small class="date">{{dt.date}}</small>
           </ion-col>
         </ion-row>
       </ion-card-content>
